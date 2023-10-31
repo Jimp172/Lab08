@@ -35,6 +35,14 @@ namespace Business
             }
             return result;
         }
+
+        public Product GetProductById(int ProductId)
+        {
+            var products = data.Get();
+            var product = products.FirstOrDefault(p => p.ProductId == ProductId);
+            return product;
+        }
+
         public void CreateProduct(Product product)
         {
 

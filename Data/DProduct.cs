@@ -70,7 +70,7 @@ namespace Data
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-                using (SqlCommand command = new SqlCommand("ActualizarProducto", connection))
+                using (SqlCommand command = new SqlCommand("ActualizarProductoNuevo", connection))
                 {
                     command.CommandType = CommandType.StoredProcedure;
 
